@@ -51,7 +51,7 @@ async def delete_song(name: str):
 
 # update
 @app.put("/update/{name}")
-async def update_todo(name: str, song: Song):
+async def update_song(name: str, song: Song):
     for i, x in enumerate(store_songlist):
         if x.name == name:
             store_songlist[i] = song
